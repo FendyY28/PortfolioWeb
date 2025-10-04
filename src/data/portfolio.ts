@@ -77,7 +77,7 @@ export const education = [
     degree: 'Undergraduate Computer Science Student',
     school: 'Binus University @Alam Sutera',
     year: '2023 - Present',
-    description: 'Focused on software engineering, web development, and algorithms.',
+    description: 'Focused on software engineering, full-stack web development, agile framework, and algorithms.',
     imageUrl: '/assets/images/BinusUni.jpg'
   },
   {

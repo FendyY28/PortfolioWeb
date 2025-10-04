@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Code } from 'lucide-react';
+import { Menu, X, Code, Sun, Moon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTheme } from '../../hooks/useTheme';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { theme, toggleTheme } = useTheme();
 
   const navItems = [
     { path: '/', label: 'Home' },
@@ -16,11 +18,11 @@ const Header: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-700">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 text-xl font-bold text-white">
+          <Link to="/" className="flex items-center space-x-2 text-xl font-bold text-gray-900 dark:text-white">
             <img 
               src="/logo.png" 
               alt="FY Logo" 
@@ -44,7 +46,7 @@ const Header: React.FC = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -52,7 +54,7 @@ const Header: React.FC = () => {
                 className={`relative px-3 py-2 text-sm font-medium transition-colors duration-200 ${
                   isActive(item.path)
                     ? 'text-purple-400'
-                    : 'text-gray-300 hover:text-purple-400'
+                    : 'text-gray-600 dark:text-gray-300 hover:text-purple-400'
                 }`}
               >
                 {item.label}
@@ -66,12 +68,24 @@ const Header: React.FC = () => {
                 )}
               </Link>
             ))}
+            
+            {/* Theme Toggle Button */}
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 hover:scale-110 active:scale-95"
+              aria-label="Toggle theme"
+            >
+              <div className="relative">
+                <Sun className={`w-5 h-5 absolute transition-all duration-300 ${theme === 'light' ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 rotate-180 scale-0'}`} />
+                <Moon className={`w-5 h-5 transition-all duration-300 ${theme === 'dark' ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 -rotate-180 scale-0'}`} />
+              </div>
+            </button>
           </div>
 
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-md text-gray-300 hover:text-purple-400 hover:bg-gray-800"
+            className="md:hidden p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-800"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -84,7 +98,7 @@ const Header: React.FC = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden border-t border-gray-700"
+              className="md:hidden border-t border-gray-200 dark:border-gray-700"
             >
               <div className="py-4 space-y-2">
                 {navItems.map((item) => (
@@ -94,13 +108,25 @@ const Header: React.FC = () => {
                     onClick={() => setIsMenuOpen(false)}
                     className={`block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200 ${
                       isActive(item.path)
-                        ? 'text-purple-400 bg-purple-900/20'
-                        : 'text-gray-300 hover:text-purple-400 hover:bg-gray-800'
+                        ? 'text-purple-400 bg-purple-100 dark:bg-purple-900/20'
+                        : 'text-gray-600 dark:text-gray-300 hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-800'
                     }`}
                   >
                     {item.label}
                   </Link>
                 ))}
+                
+                {/* Mobile Theme Toggle */}
+                <button
+                  onClick={toggleTheme}
+                  className="flex items-center space-x-2 w-full px-3 py-2 text-base font-medium rounded-md text-gray-600 dark:text-gray-300 hover:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300"
+                >
+                  <div className="relative w-5 h-5">
+                    <Sun className={`w-5 h-5 absolute transition-all duration-300 ${theme === 'light' ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 rotate-180 scale-0'}`} />
+                    <Moon className={`w-5 h-5 absolute transition-all duration-300 ${theme === 'dark' ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 -rotate-180 scale-0'}`} />
+                  </div>
+                  <span>{theme === 'light' ? 'Dark Mode' : 'Light Mode'}</span>
+                </button>
               </div>
             </motion.div>
           )}

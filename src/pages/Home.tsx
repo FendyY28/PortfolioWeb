@@ -29,7 +29,7 @@ const Home: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="text-4xl md:text-6xl font-bold text-white mb-6"
+                className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6"
               >
                 Hi, I'm{' '}
                 <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
@@ -42,9 +42,9 @@ const Home: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-xl md:text-2xl text-gray-300 mb-8"
+                className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8"
               >
-                I'm Computer Science Student Focusing on Software Engineering. I really love to explore new things.
+                I'm Computer science student focusing on Full-stack Web Development, Software Engineering, and Agile Methodology Framework
               </motion.p>
 
               {/* CTA Buttons */}
@@ -63,11 +63,11 @@ const Home: React.FC = () => {
                 <button
                   onClick={() => {
                     const link = document.createElement("a");
-                    link.href = "/assets/cv/CV_Fendy_Yurista.pdf";
+                    link.href = "/assets/cv/CV Fendy Yurista.pdf";
                     link.download = "Fendy_Yurista_CV.pdf";
                     link.click();
                   }}
-                  className="px-8 py-3 border-2 border-gray-600 text-gray-300 rounded-lg font-medium hover:border-purple-500 hover:bg-purple-900/20 transition-all duration-200 flex items-center space-x-2"
+                  className="px-8 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg font-medium hover:border-purple-500 hover:bg-purple-100 dark:hover:bg-purple-900/20 transition-all duration-200 flex items-center space-x-2"
 >
                   <Download className="w-4 h-4" />
                   <span>Download CV</span>
@@ -92,7 +92,7 @@ const Home: React.FC = () => {
                     <a
                       key={social.label}
                       href={social.href}
-                      className="p-3 text-gray-400 hover:text-purple-400 hover:bg-purple-900/20 rounded-full transition-all duration-200"
+                      className="p-3 text-gray-500 dark:text-gray-400 hover:text-purple-400 hover:bg-purple-100 dark:hover:bg-purple-900/20 rounded-full transition-all duration-200"
                       aria-label={social.label}
                     >
                       <Icon className="w-6 h-6" />
@@ -129,7 +129,7 @@ const Home: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
             onClick={scrollToNext}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-500 hover:text-purple-400 transition-colors duration-200"
+            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-400 dark:text-gray-500 hover:text-purple-400 transition-colors duration-200"
           >
             <motion.div
               animate={{ y: [0, 10, 0] }}
@@ -152,14 +152,14 @@ const Home: React.FC = () => {
             className="text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              About Me
+              <span className="text-gray-900 dark:text-white">About Me</span>
             </h2>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-8">
+            <p className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-8">
               I'm a Computer Science Student, focusing on Software Engineering and I'm really passionate to learn new things.
             </p>
             <Link
               to="/about"
-              className="inline-flex items-center px-6 py-3 border border-purple-500 text-purple-400 rounded-lg font-medium hover:bg-purple-600 hover:text-white transition-all duration-200"
+              className="inline-flex items-center px-6 py-3 border border-purple-500 text-purple-600 dark:text-purple-400 rounded-lg font-medium hover:bg-purple-600 hover:text-white transition-all duration-200"
             >
               Learn More About Me
             </Link>

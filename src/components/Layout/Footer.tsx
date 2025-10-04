@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-gray-950 text-white border-t border-gray-800">
+    <footer className="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-white border-t border-gray-200 dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col items-center space-y-8">
           {/* Contact Information */}
@@ -43,13 +43,13 @@ const Footer: React.FC = () => {
                 <div key={contact.label} className="flex flex-col items-center text-center space-y-2">
                   <div className="flex items-center space-x-3 mb-2">
                     <Icon className="w-5 h-5 text-purple-400" />
-                    <span className="text-gray-300 font-medium">{contact.label}</span>
+                    <span className="text-gray-700 dark:text-gray-300 font-medium">{contact.label}</span>
                   </div>
                   <a
                     href={contact.href}
                     target={contact.label === 'Email' ? undefined : '_blank'}
                     rel={contact.label === 'Email' ? undefined : 'noopener noreferrer'}
-                    className="text-gray-400 hover:text-purple-400 transition-colors duration-200 text-sm break-all"
+                    className="text-gray-600 dark:text-gray-400 hover:text-purple-400 transition-colors duration-200 text-sm break-all"
                   >
                     {contact.text}
                   </a>
@@ -59,10 +59,10 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Copyright */}
-          <div className="text-center text-gray-500">
+          <div className="text-center text-gray-500 dark:text-gray-500">
             <p className="flex items-center justify-center space-x-1">
-              <span>© {currentYear} Made with</span>
-              <Heart className="w-4 h-4 text-purple-400 fill-current" />
+              <span>© {currentYear} Made </span>
+              {/* <Heart className="w-4 h-4 text-purple-400 fill-current" /> */}
               <span>by Fendy Yurista</span>
             </p>
           </div>
