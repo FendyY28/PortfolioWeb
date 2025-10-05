@@ -107,9 +107,9 @@ const Home: React.FC = () => {
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="flex justify-center lg:justify-self-start lg:pl-24"
+              className="flex justify-center lg:justify-self-start lg:pl-12"
 >
-              <div className="relative lg:translate-x-8">
+              <div className="relative lg:translate-x-12">
                 <img
                   src="/assets/images/Profile.jpg"
                   alt="Profile"
