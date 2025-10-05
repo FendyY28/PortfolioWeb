@@ -109,7 +109,7 @@ const Home: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="flex justify-center lg:justify-self-start lg:pl-12"
 >
-              <div className="relative lg:translate-x-12">
+              <div className="relative lg:translate-x-8">
                 <img
                   src="/assets/images/Profile.jpg"
                   alt="Profile"
