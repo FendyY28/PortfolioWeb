@@ -51,15 +51,15 @@ export const projects = [
     technologies: ['Python', 'YoloV5'],
     featured: true
   },
-  {
-    id: '3',
-    title: 'Portfolio Website',
-    description: 'A Dynamic Portfolio Website made with React (Using Typescript).',
-    imageUrl: '/assets/images/PortfolioWeb.png',
-    technologies: ['React', 'Typescript', 'Tailwind'],
-    githubUrl: 'https://github.com/FendyY28/PortfolioWebsite',
-    featured: true
-  },
+  // {
+  //   id: '3',
+  //   title: 'Portfolio Website',
+  //   description: 'A Dynamic Portfolio Website made with React (Using Typescript).',
+  //   imageUrl: '/assets/images/PortfolioWeb.png',
+  //   technologies: ['React', 'Typescript', 'Tailwind'],
+  //   githubUrl: 'https://github.com/FendyY28/PortfolioWebsite',
+  //   featured: true
+  // },
 ];
 
 export const personalInfo = {
