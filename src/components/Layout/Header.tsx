@@ -23,7 +23,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 text-xl font-bold text-gray-900 dark:text-white">
-            <img 
+            {/* <img 
               src="/logo.png" 
               alt="FY Logo" 
               className="w-8 h-8 object-contain"
@@ -36,13 +36,13 @@ const Header: React.FC = () => {
                 if (next) {
                 next.style.display = 'flex';
                 }
-              }}
+              }} */}
 
-            />
-            <div className="hidden items-center space-x-2">
+            {/* /> */}
+            {/* <div className="hidden items-center space-x-2"> */}
               <Code className="w-6 h-6 text-purple-400" />
               <span>FY</span>
-            </div>
+            {/* </div> */}
           </Link>
 
           {/* Desktop Navigation */}

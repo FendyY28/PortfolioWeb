@@ -6,6 +6,7 @@ export const skillCategories = [
       'PHP', 
       'Python',
       'Typescript',
+      'Agile Methodology',
       'MySQL',
       'Java',
       'UI/UX Design'
