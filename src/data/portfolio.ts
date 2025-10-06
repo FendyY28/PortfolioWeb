@@ -6,7 +6,6 @@ export const skillCategories = [
       'PHP', 
       'Python',
       'Typescript',
-      'Agile Methodology',
       'MySQL',
       'Java',
       'UI/UX Design'
@@ -38,28 +37,46 @@ export const projects = [
     title: 'EduFun',
     description: 'A Learning Management System with quiz features.',
     imageUrl: '/assets/images/Edufun.jpg',
+    images: [
+      '/assets/images/Edufun.jpg',
+      '/assets/images/Edufun-2.jpg',
+      '/assets/images/Edufun-3.jpg'
+    ],
     technologies: ['PHP', 'MySQL'],
     githubUrl: 'https://github.com/FendyY28/EduFun',
-    featured: true
+    featured: true,
+    longDescription: `EduFun is a universal Learning Management System built to make online learning more accessible, interactive, and collaborative across institutions. Unlike the usual LMS platforms that are limited to a single organization, EduFun enables educators and students from various institutions to connect, share resources, and engage in meaningful learning experiences. The platform includes features such as classroom management, discussion forums, assignment reminders, and an AI-powered chatbot using Gemini API that guides users through the system.
+
+Developed using PHP, MySQL, and designed with Figma, EduFun provides a scalable and user-friendly interface suitable for diverse academic environments. EduFun supports digital transformation in education, offering an open, inclusive, and adaptive learning space without institutional restrictions.`,
+    stats: {
+      duration: '4 months',
+      role: 'Back-end Developer',
+      status: 'Completed'
+    }
   },
   {
     id: '2',
     title: 'Garbage Detector AI',
     description: 'A trained AI that detects types of garbages using pre-trained AI model (YoloV5).',
     imageUrl: '/assets/images/GarbageDetectionAI.png',
+    images: [
+      '/assets/images/GarbageDetectionAI.png',
+      '/assets/images/GarbageDetectionAI-2.jpg',
+    ],
     docUrl: 'https://docs.google.com/document/d/1jnPS3iEV5wrKy98Vsyr6ihstQz3qDoLAx1w2ItZFYhY/edit?usp=sharing',
     technologies: ['Python', 'YoloV5'],
-    featured: true
+    featured: true,
+    longDescription: `The Garbage Detector AI is an intelligent waste classification system that leverages the power of YOLOv5 (You Only Look Once version 5) to automatically identify and categorize different types of garbage in real-time.
+This project addresses the growing need for automated waste management solutions in smart cities and environmental conservation efforts. The AI model can accurately distinguish between various waste categories including plastic bottles, paper, organic waste, metal cans, and other recyclable materials.
+
+The system uses a pre-trained YOLOv5 model that has been fine-tuned on a comprehensive dataset of garbage images. The model achieves high accuracy in object detection and classification, making it suitable for deployment in real-world waste sorting facilities.`,
+    stats: {
+      duration: '3 months',
+      role: 'AI Developer',
+      status: 'Completed',
+      accuracy: '92%'
+    }
   },
-  // {
-  //   id: '3',
-  //   title: 'Portfolio Website',
-  //   description: 'A Dynamic Portfolio Website made with React (Using Typescript).',
-  //   imageUrl: '/assets/images/PortfolioWeb.png',
-  //   technologies: ['React', 'Typescript', 'Tailwind'],
-  //   githubUrl: 'https://github.com/FendyY28/PortfolioWebsite',
-  //   featured: true
-  // },
 ];
 
 export const personalInfo = {

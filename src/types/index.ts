@@ -3,11 +3,19 @@ export interface Project {
   title: string;
   description: string;
   imageUrl: string;
+  images: string[];
   technologies: string[];
   githubUrl?: string;
   docUrl?: string;
   liveUrl?: string;
   featured?: boolean;
+  longDescription?: string;
+  stats?: {
+    duration?: string;
+    role?: string;
+    status?: string;
+    accuracy?: string;
+  };
 }
 
 export interface PersonalInfo {
