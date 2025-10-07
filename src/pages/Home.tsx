@@ -20,7 +20,7 @@ const Home: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="grid lg:grid-cols-2 gap-12 items-center justify-items-center"
+            className="grid lg:grid-cols-2 gap-12 items-center justify-items-center pb-20 sm:pb-0"
           >
             {/* Left Side - Text Content */}
             <div className="text-center lg:text-left lg:justify-self-end lg:pr-12">
