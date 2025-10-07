@@ -129,7 +129,7 @@ const Home: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
             onClick={scrollToNext}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-400 dark:text-gray-500 hover:text-purple-400 transition-colors duration-200"
+            className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 text-gray-400 dark:text-gray-500 hover:text-purple-400 transition-colors duration-200 z-10"
           >
             <motion.div
               animate={{ y: [0, 10, 0] }}
