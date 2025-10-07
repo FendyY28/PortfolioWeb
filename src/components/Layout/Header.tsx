@@ -22,7 +22,7 @@ const Header: React.FC = () => {
       {/* Desktop Floating Header */}
       <header className="hidden md:block fixed top-8 left-1/2 -translate-x-1/2 z-50">
         <nav className="bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border border-gray-300/50 dark:border-gray-600/50 rounded-2xl shadow-2xl px-6 py-3">
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-3">
             {navItems.map((item) => (
               <Link
                 key={item.path}
