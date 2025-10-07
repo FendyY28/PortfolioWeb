@@ -74,7 +74,6 @@ The system uses a pre-trained YOLOv5 model that has been fine-tuned on a compreh
       duration: '3 months',
       role: 'AI Developer',
       status: 'Completed',
-      accuracy: '92%'
     }
   },
 ];

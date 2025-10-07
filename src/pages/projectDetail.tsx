@@ -10,7 +10,7 @@ import {
   Calendar,
   User,
   CheckCircle,
-  Target,
+  // Target,
 } from 'lucide-react';
 import { projects } from '../data/portfolio';
 
@@ -203,7 +203,7 @@ const ProjectDetail: React.FC = () => {
               {/* Technologies */}
               <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                  Technologies
+                  Tools
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
@@ -257,7 +257,7 @@ const ProjectDetail: React.FC = () => {
                         </div>
                       </div>
                     )}
-                    {project.stats.accuracy && (
+                    {/* {project.stats.accuracy && (
                       <div className="flex items-center space-x-3">
                         <Target className="w-5 h-5 text-blue-400" />
                         <div>
@@ -267,7 +267,7 @@ const ProjectDetail: React.FC = () => {
                           </p>
                         </div>
                       </div>
-                    )}
+                    )} */}
                   </div>
                 </div>
               )}
