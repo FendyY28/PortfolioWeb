@@ -105,7 +105,7 @@ const ProjectDetail: React.FC = () => {
               className="relative mb-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700"
             >
               <div className="relative aspect-video overflow-hidden">
-                <AnimatePresence mode="wait" custom={direction}>
+                <AnimatePresence initial={false} custom={direction}>
                   <motion.img
                     key={currentImageIndex}
                     src={project.images[currentImageIndex]}
@@ -114,7 +114,7 @@ const ProjectDetail: React.FC = () => {
                     initial={{ x: direction > 0 ? '100%' : '-100%' }}
                     animate={{ x: 0 }}
                     exit={{ x: direction > 0 ? '-100%' : '100%' }}
-                    transition={{ duration: 0.4, ease: 'linear' }}
+                    transition={{ duration: 0.5, ease: [0.32, 0.72, 0, 1] }}
                     className="absolute top-0 left-0 w-full h-full object-cover"
                   />
                 </AnimatePresence>

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ExternalLink, Github, Star, BookOpen } from 'lucide-react';
+import { Star, ArrowRight } from 'lucide-react';
 import { Project } from '../../types';
 
 interface ProjectCardProps {
@@ -50,44 +50,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
             ))}
           </div>
 
-          {/* Links */}
-          <div className="flex items-center space-x-4">
-            {project.docUrl && (
-              <a
-                href={project.docUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-                className="flex items-center space-x-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
-              >
-                <BookOpen className="w-4 h-4" />
-                <span className="text-sm">Docs</span>
-              </a>
-            )}
-            {project.githubUrl && (
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-                className="flex items-center space-x-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
-              >
-                <Github className="w-4 h-4" />
-                <span className="text-sm">Code</span>
-              </a>
-            )}
-            {project.liveUrl && (
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-                className="flex items-center space-x-2 text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors duration-200"
-              >
-                <ExternalLink className="w-4 h-4" />
-                <span className="text-sm">Live Demo</span>
-              </a>
-            )}
+          {/* Details Link */}
+          <div className="flex items-center justify-end">
+            <div className="flex items-center space-x-2 text-purple-600 dark:text-purple-400 group-hover:text-purple-700 dark:group-hover:text-purple-300 transition-colors duration-200">
+              <span className="text-sm font-medium">Details</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+            </div>
           </div>
         </div>
       </motion.div>

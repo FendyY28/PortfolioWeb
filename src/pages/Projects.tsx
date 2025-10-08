@@ -88,17 +88,17 @@ const Projects: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="mt-20 text-center"
         >
-          <div className="bg-gradient-to-r from-gray-100 to-purple-100 dark:from-gray-800 dark:to-purple-900/50 rounded-2xl p-12 border border-gray-200 dark:border-gray-700">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          <div className="bg-gradient-to-br from-purple-50 via-fuchsia-50 to-pink-50 dark:from-gray-800 dark:to-gray-800 rounded-2xl p-12 border-2 border-purple-300 dark:border-purple-500/50 shadow-2xl shadow-purple-500/20 dark:shadow-purple-500/20 hover:shadow-purple-500/30 dark:hover:shadow-purple-500/30 transition-all duration-300">
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-fuchsia-600 dark:from-purple-400 dark:to-purple-300 bg-clip-text text-transparent mb-4">
               Interested in Working Together?
             </h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-              I'm always open to discussing new opportunities and interesting projects. 
+            <p className="text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto font-medium">
+              I'm always open to discussing new opportunities and interesting projects.
               Let's create something amazing together!
             </p>
             <a
-              href="mailto:your.email@example.com"
-              className="inline-flex items-center px-8 py-3 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200 shadow-lg hover:shadow-xl hover:shadow-purple-500/25"
+              href="mailto:yuristafendy28@gmail.com"
+              className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-purple-600 to-fuchsia-600 dark:from-purple-600 dark:to-purple-500 text-white rounded-lg font-medium hover:from-purple-700 hover:to-fuchsia-700 dark:hover:from-purple-700 dark:hover:to-purple-600 transition-all duration-200 shadow-lg shadow-purple-500/50 hover:shadow-xl hover:shadow-purple-500/60 hover:scale-105 active:scale-95"
             >
               Get In Touch
             </a>
