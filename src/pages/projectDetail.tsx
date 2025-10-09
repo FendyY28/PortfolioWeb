@@ -287,7 +287,7 @@ const ProjectDetail: React.FC = () => {
                     >
                       <Github className="w-5 h-5 text-gray-600 dark:text-gray-300" />
                       <span className="font-medium text-gray-900 dark:text-white">
-                        View Code
+                        Code
                       </span>
                     </a>
                   )}
