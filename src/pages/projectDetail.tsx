@@ -283,7 +283,7 @@ const ProjectDetail: React.FC = () => {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
+                      className="flex items-center space-x-3 p-3 rounded-lg bg-purple-50 dark:bg-purple-900/25 hover:bg-purple-100 dark:hover:bg-purple-900/50 transition-colors duration-200"
                     >
                       <Github className="w-5 h-5 text-gray-600 dark:text-gray-300" />
                       <span className="font-medium text-gray-900 dark:text-white">
@@ -297,10 +297,10 @@ const ProjectDetail: React.FC = () => {
                       href={project.docUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-3 p-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors duration-200"
+                      className="flex items-center space-x-3 p-3 rounded-lg bg-purple-50 dark:bg-purple-900/25 hover:bg-purple-100 dark:hover:bg-purple-900/50 transition-colors duration-200"
                     >
-                      <BookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                      <span className="font-medium text-blue-600 dark:text-blue-400">
+                      <BookOpen className="w-5 h-5 text-white-600 dark:text-white-400" />
+                      <span className="font-medium text-white-600 dark:text-white-400">
                         Documentation
                       </span>
                     </a>
