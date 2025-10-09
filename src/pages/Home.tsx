@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Download, Github, Linkedin, Mail, Phone } from 'lucide-react';
+import { ArrowDown, Download, Github, Linkedin, Mail, Phone, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { projects } from '../data/portfolio';
+import ProjectCard from '../components/UI/ProjectCard';
 
 const Home: React.FC = () => {
   const scrollToNext = () => {
@@ -29,7 +31,7 @@ const Home: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6"
+                className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4"
               >
                 Hi, I'm{' '}
                 <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
@@ -37,14 +39,24 @@ const Home: React.FC = () => {
                 </span>
               </motion.h1>
 
+              {/* Title */}
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.35 }}
+                className="text-2xl md:text-3xl font-semibold text-purple-600 dark:text-purple-400 mb-6"
+              >
+                Computer Science Student
+              </motion.h2>
+
               {/* Subtitle */}
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8"
+                className="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-8"
               >
-                I'm Computer science student focusing on Full-stack Web Development, Software Engineering, and Agile Methodology Framework
+                Focusing on Full-stack Web Development, Software Engineering, and Agile Methodology Framework
               </motion.p>
 
               {/* CTA Buttons */}
@@ -138,6 +150,50 @@ const Home: React.FC = () => {
               <ArrowDown className="w-6 h-6" />
             </motion.div>
           </motion.button>
+        </div>
+      </section>
+
+      {/* Featured Projects Section */}
+      <section className="py-20 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Featured Projects
+            </h2>
+            <p className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
+              A showcase of my best work and most impactful projects
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {projects
+              .filter(project => project.featured)
+              .map((project, index) => (
+                <ProjectCard key={project.id} project={project} index={index} />
+              ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="text-center"
+          >
+            <Link
+              to="/projects"
+              className="inline-flex items-center px-8 py-3 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200 shadow-lg hover:shadow-xl hover:shadow-purple-500/25 space-x-2"
+            >
+              <span>View All Projects</span>
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </motion.div>
         </div>
       </section>
 

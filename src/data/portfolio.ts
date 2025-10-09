@@ -57,7 +57,7 @@ Developed using PHP, MySQL, and designed with Figma, EduFun provides a scalable 
   {
     id: '2',
     title: 'Garbage Detector AI',
-    description: 'A trained AI that detects types of garbages using pre-trained AI model (YoloV5).',
+    description: 'An AI that detects types of garbages using pre-trained AI model (YoloV5).',
     imageUrl: '/assets/images/GarbageDetectionAI.png',
     images: [
       '/assets/images/GarbageDetectionAI.png',
