@@ -93,7 +93,7 @@ const Projects: React.FC = () => {
               Interested in Working Together?
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto font-medium">
-              I'm always open to discussing new opportunities and interesting projects.
+              I'm open to discussing new opportunities and interesting projects.
               Let's create something amazing together!
             </p>
             <a

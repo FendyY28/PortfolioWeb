@@ -8,25 +8,28 @@ export const skillCategories = [
       'Typescript',
       'MySQL',
       'Java',
-      'UI/UX Design'
+      'HTML',
+      'CSS',
+      'Javascript'
     ]
   },
   {
-    title: 'Applications Used',
+    title: 'Tools',
     skills: [
       'Github',
-      'Visual Studio Code',
       'Miro',
       'Jira',
       'Trello',
       'Figma',
+      'Canva',
       'Microsoft Office'
     ]
   },
   {
-    title: 'Additional Skills',
+    title: 'Languages',
     skills: [
-      'Bilingual in English and Indonesia'
+      'Indonesian',
+      'English',
     ]
   }
 ];
