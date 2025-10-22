@@ -97,8 +97,6 @@ const Header: React.FC = () => {
           </motion.header>
         )}
       </AnimatePresence>
-
-      {/* Keep your existing mobile header & menu as is */}
     </>
   );
 };
