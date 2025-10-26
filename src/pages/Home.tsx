@@ -31,10 +31,18 @@ const Home: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4"
+                className="text-gray-300 mb-2 text-2xl"
               >
-                Hi, I'm{' '}
-                <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
+                Hi, My name is
+              </motion.h1>
+
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                className="text-4xl md:text-6xl text-gray-900 dark:text-white mb-4"
+              >
+                <span className="bg-gradient-to-r font-bold from-purple-400 to-purple-600 bg-clip-text text-transparent">
                   Fendy Yurista
                 </span>
               </motion.h1>
