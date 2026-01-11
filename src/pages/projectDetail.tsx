@@ -6,6 +6,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Github,
+  ExternalLink,
   BookOpen,
   Calendar,
   User,
@@ -302,6 +303,21 @@ const ProjectDetail: React.FC = () => {
                       <BookOpen className="w-5 h-5 text-white-600 dark:text-white-400" />
                       <span className="font-medium text-white-600 dark:text-white-400">
                         Documentation
+                      </span>
+                    </a>
+                  )}
+
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-3 p-3 rounded-lg bg-purple-50 dark:bg-purple-900/25 hover:bg-purple-100 dark:hover:bg-purple-900/50 transition-colors duration-200"
+                    >
+                      {/* Using ExternalLink icon from Lucide (standard for demo links) */}
+                      <ExternalLink className="w-5 h-5 text-gray-600 dark:text-gray-300" />
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Live Demo
                       </span>
                     </a>
                   )}

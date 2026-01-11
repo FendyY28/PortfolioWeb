@@ -79,6 +79,28 @@ The system uses a pre-trained YOLOv5 model that has been fine-tuned on a compreh
       status: 'Completed',
     }
   },
+  {
+    id: '3',
+    title: 'ReadSpace',
+    description: 'A digital library website featuring RBAC and secure authentication.',
+    imageUrl: '/assets/images/ReadSpace.jpg', 
+    images: [
+      '/assets/images/ReadSpace-1.png',
+      '/assets/images/ReadSpace-2.jpg',
+    ],
+    githubUrl: 'https://github.com/HubertusKenneth/E-Library', 
+    liveUrl: 'https://readspacee.up.railway.app/',
+    technologies: ['PHP', 'Laravel', 'MySQL', 'Bootstrap'],
+    featured: true,
+    longDescription: `ReadSpace is a robust digital library platform built with Laravel that streamlines book management and user engagement. The core of the application is a sophisticated Role-Based Access Control (RBAC) system, which manages different permissions for Guests, Users, and Administrators.
+
+Administrators have full CRUD (Create, Read, Update, Delete) capabilities to manage the book catalog, while registered users can curate personal "Favorite Books" lists and browse detailed metadata. The application prioritizes security and user experience by utilizing Laravel Breeze for authentication and Blade templates for a responsive, clean interface.`,
+    stats: {
+      duration: '3 months',
+      role: 'Front-end Developer',
+      status: 'Completed',
+    }
+  },
 ];
 
 export const personalInfo = {
