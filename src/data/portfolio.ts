@@ -135,14 +135,14 @@ export const experience = [
   {
     title: 'HIMTI Binus',
     company: 'Web Developer Division',
-    period: 'Mar 2025 - Present',
+    period: 'Mar 2025 - Jan 2026',
     description: 'Worked as a team to add more features in OFOG Website.',
     imageUrl: '/assets/images/HimtiLogo.jpeg'
   },
   {
     title: 'Persekutuan Oikoumene',
     company: 'Media and Communication Division',
-    period: 'Apr 2025 - Present',
+    period: 'Apr 2025 - Jan 2026',
     description: 'Created promotional digital contents (Posters, Videos) for events.',
     imageUrl: '/assets/images/POLogo.png'
   }
