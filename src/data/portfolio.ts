@@ -58,25 +58,22 @@ Developed using PHP, MySQL, and designed with Figma, EduFun provides a scalable 
     }
   },
   {
-    id: '2',
-    title: 'Garbage Detector AI',
-    description: 'An AI that detects types of garbages using pre-trained AI model (YoloV5).',
-    imageUrl: '/assets/images/GarbageDetectionAI.png',
+    id: '4',
+    title: 'CRG Monitoring Dashboard',
+    description: 'Dashboard for monitoring projects for Consumer Risk Group to track SDLC Phases.',
+    longDescription: 'Developed a comprehensive dashboard for the Consumer Risk Group to effectively monitor projects and track Software Development Life Cycle (SDLC) phases.\n\nThe platform features interactive monitoring charts and dynamic Gantt charts for each project, providing clear visibility into timelines. Additionally, it includes robust project management capabilities, empowering users to seamlessly add or remove projects and update their ongoing progress.\n\nSuccessfully delivered the project within 2 months, well ahead of the 3-month deadline. Due to its success, the application is now used as a reference standard for vendors developing future dashboards for the CRG division.',
+    imageUrl: '/assets/images/CRG.jpg',
     images: [
-      '/assets/images/GarbageDetectionAI.png',
-      '/assets/images/GarbageDetectionAI-2.jpg',
+      '/assets/images/crg-1.jpg',
+      '/assets/images/crg-2.jpg'
     ],
-    docUrl: 'https://docs.google.com/document/d/1jnPS3iEV5wrKy98Vsyr6ihstQz3qDoLAx1w2ItZFYhY/edit?usp=sharing',
-    technologies: ['Python', 'YoloV5'],
+    technologies: ['React', 'TypeScript', 'Node.js', 'Tailwind CSS'],
     featured: true,
-    longDescription: `The Garbage Detector AI is an intelligent waste classification system that leverages the power of YOLOv5 (You Only Look Once version 5) to automatically identify and categorize different types of garbage in real-time.
-This project addresses the growing need for automated waste management solutions in smart cities and environmental conservation efforts. The AI model can accurately distinguish between various waste categories including plastic bottles, paper, organic waste, metal cans, and other recyclable materials.
-
-The system uses a pre-trained YOLOv5 model that has been fine-tuned on a comprehensive dataset of garbage images. The model achieves high accuracy in object detection and classification, making it suitable for deployment in real-world waste sorting facilities.`,
+    githubUrl: 'https://github.com/FendyY28/CRGTaskDashboard',
     stats: {
-      duration: '3 months',
-      role: 'AI Developer',
-      status: 'Completed',
+      duration: '2 Months',
+      role: 'Full-stack Developer',
+      status: 'Completed'
     }
   },
   {
@@ -98,6 +95,28 @@ Administrators have full CRUD (Create, Read, Update, Delete) capabilities to man
     stats: {
       duration: '3 months',
       role: 'Front-end Developer',
+      status: 'Completed',
+    }
+  },
+  {
+    id: '2',
+    title: 'Garbage Detector AI',
+    description: 'An AI that detects types of garbages using pre-trained AI model (YoloV5).',
+    imageUrl: '/assets/images/GarbageDetectionAI.png',
+    images: [
+      '/assets/images/GarbageDetectionAI.png',
+      '/assets/images/GarbageDetectionAI-2.jpg',
+    ],
+    docUrl: 'https://docs.google.com/document/d/1jnPS3iEV5wrKy98Vsyr6ihstQz3qDoLAx1w2ItZFYhY/edit?usp=sharing',
+    technologies: ['Python', 'YoloV5'],
+    featured: false,
+    longDescription: `The Garbage Detector AI is an intelligent waste classification system that leverages the power of YOLOv5 (You Only Look Once version 5) to automatically identify and categorize different types of garbage in real-time.
+This project addresses the growing need for automated waste management solutions in smart cities and environmental conservation efforts. The AI model can accurately distinguish between various waste categories including plastic bottles, paper, organic waste, metal cans, and other recyclable materials.
+
+The system uses a pre-trained YOLOv5 model that has been fine-tuned on a comprehensive dataset of garbage images. The model achieves high accuracy in object detection and classification, making it suitable for deployment in real-world waste sorting facilities.`,
+    stats: {
+      duration: '3 months',
+      role: 'AI Developer',
       status: 'Completed',
     }
   },
